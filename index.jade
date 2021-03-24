@@ -1,0 +1,80 @@
+- var pageTitle = "Tetravex"
+- var site = "Tetravex"
+- var fbPreview = "https://miguel-rivas.github.io/img/pv_tetravex.png"
+- var icoPath = "https://miguel-rivas.github.io/img/favicon.png"
+- var icoBackground = "#D83434"
+- var description = "Tetravex | Puzzle developed by Aguacate Kun. The original version was written (and named) by Scott Ferguson."
+- var keyWords = "aguacate, aguacatekun, santo, domingo, republica, dominicana, front, end, developer, tetravex, game, puzzle"
+- var viewPort = false
+
+doctype html
+html
+	head
+		include jade/metatags
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		link(rel="stylesheet", href="css/style.css")
+		link(
+			rel="stylesheet"
+			href="http://fonts.googleapis.com/css?family=Montserrat:400"
+			type="text/css"
+			)
+		link(
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Amatic+SC:700"
+			type="text/css"
+			)
+		link(
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Oswald:400"
+			type="text/css"
+			)
+		
+	body
+		main
+			a(href="../../"): img#avoBack(src="img/avo_back.png", alt="logo")
+			aside#rules
+				img(src="img/crown.png")
+				h1 HOW TO SOLVE
+				p The player is presented with a grid full of pieces, each piece have a number on each edge. The objective of the game is to place the pieces in the grid in the proper position. Two pieces should only be placed next to each other if the numbers on adjacent faces match.
+				button Okay Now I Get It
+
+			section#home.fullScreen
+				span.pencil.red
+				span.pencil.black
+				span.pencil.brown
+				span.pencil.blue
+				span.pencil.gray
+
+				span.tambora.t
+				span.tambora.e
+				span.tambora.t
+				span.tambora.r
+				span.tambora.a
+				span.tambora.v
+				span.tambora.e
+				span.tambora.x
+
+				.btnBox
+					button#btn_instructions How Should i Play?
+					button#btn_chooseLevel Play
+
+			section#chooseLevel.adaptative.ND
+				h1 Choose Your Level
+				.arrow.right.ND
+				.arrow.left
+
+			section#final.ND
+				.arrow.left
+
+			#levels.ND
+
+		script(src="js/lodash.js", type="text/javascript")
+		script(src="js/velocity.js", type="text/javascript")
+		script(src="js/sizzle.js", type="text/javascript")
+
+		script(src="js/avoRights.js", type="text/javascript")
+		script(src="js/varsDB.js", type="text/javascript")
+		script(src="js/canvasShapes.js", type="text/javascript")
+		script(src="js/worldDecoration.js", type="text/javascript")
+		script(src="js/functions.js", type="text/javascript")
+		script(src="js/main.js", type="text/javascript")
